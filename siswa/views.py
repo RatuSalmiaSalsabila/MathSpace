@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-def siswa(request):
+def loginsiswa(request):
     return render(request, 'loginsiswa.html')
 
-def siswa1(request):
+def registrasisiswa(request):
     return render(request, 'registrasisiswa.html')

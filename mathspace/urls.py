@@ -17,12 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from guru.views import *
 from siswa.views import *
+from guru.models import *
+from siswa.models import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('guru/', guru),
-    path('guru1/', guru1),
     path('loginguru/', loginguru),
-    path('siswa/', siswa),
-    path('siswa1/', siswa1),
+    path('registrasiguru/', registrasiguru),
+    path('loginsiswa/', loginsiswa),
+    path('registrasisiswa/', registrasisiswa),
 ]

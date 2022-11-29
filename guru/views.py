@@ -1,8 +1,10 @@
 from django.shortcuts import render
+from guru.models import guru
+from guru.forms import FormGuru
 
 # Create your views here.
-def guru(request):
+def loginguru(request):
     return render(request, 'loginguru.html')
 
-def guru1(request):
+def registrasiguru(request):
     return render(request, 'registrasiguru.html')
