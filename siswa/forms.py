@@ -1,8 +1,8 @@
 from dataclasses import fields
 from django.forms import ModelForm
-from siswa.models import siswa
+from siswa.models import datasiswa
 
 class FormSiswa(ModelForm):
     class Meta:
-        model = siswa
+        model = datasiswa
         fields = '__all__'

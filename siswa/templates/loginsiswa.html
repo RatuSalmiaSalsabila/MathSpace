@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Siswa</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+  
   <div class="box">
     <center><h1>Login Siswa</h1></center></div>
     <style type="text/css">
@@ -14,10 +12,21 @@
                 color: 10px;
         }
         .box{
-                background: rgb(43, 170, 85);
+                background: #60c7f0;
                 padding: 10px;
             }
     </style>
-    <p>Silahkan isi data Anda</p>
-</body>
-</html>
+    <p>Silakan isi data Anda</p>
+
+    <form action="" method="post">
+      <div class="container-al46">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" name="psw" value="Enter Password" required>
+
+      </div>
+    </form>
+
+    {% endblock %}

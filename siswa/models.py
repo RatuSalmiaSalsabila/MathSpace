@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.utils.timezone import now
 
 # Create your models here.
-class siswa(models.Model):
+class datasiswa(models.Model):
     nama = models.CharField(max_length=50)
     NISN = models.CharField(max_length=40)
     tanggal_lahir = models.CharField(max_length=40)

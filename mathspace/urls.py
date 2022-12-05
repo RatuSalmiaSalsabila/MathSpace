@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from home.views import *
 from guru.views import *
 from siswa.views import *
 from guru.models import *
@@ -22,6 +23,7 @@ from siswa.models import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('home/', bukahome),
     path('loginguru/', loginguru),
     path('registrasiguru/', registrasiguru),
     path('loginsiswa/', loginsiswa),

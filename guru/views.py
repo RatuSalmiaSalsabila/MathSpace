@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from guru.models import guru
+from guru.models import dataguru
 from guru.forms import FormGuru
 
 # Create your views here.
